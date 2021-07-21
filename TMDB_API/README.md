@@ -8,10 +8,13 @@
 
 ```jsx
 npm install
+cd client
+npm install
 ```
 
 ### Live document execution
 
 ```jsx
+cd ..
 npm run dev
 ```
