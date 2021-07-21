@@ -25,9 +25,11 @@ client>src>component>views>LandingPage>LandingPage.js
 - Main Image → Get the most popular movie posters
 - Movie Grid Cards → ing..
 
+
 client>src>components>views>LandingPage>Sections>Mainimage.js
 
 - Set MainImage
+
 
 client>src>components>Config.js
 
