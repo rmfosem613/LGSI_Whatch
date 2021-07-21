@@ -7,7 +7,7 @@
 ### Initial Setting
 
 ```jsx
-cd TMDB_API/client
+cd TMDB_API
 npm install
 ```
 
