@@ -2,37 +2,28 @@
 
 ### 🔗Reference
 
-- [John Ahn Youtube Link](https://www.youtube.com/watch?v=e8xMcMXqYGw&list=PL9a7QRYt5fqkowXUgTj_tbkFClsPhO5XV&index=1)
-
-### Initial Setting
-
-```jsx
-cd TMDB_API
-npm install
-```
+- [Florin Pop Youtube Link](https://www.youtube.com/watch?v=sZ0bZGfg_m4)
 
 ### Live document execution
 
 ```jsx
-cd ..
-npm run dev
+..LGSI_Whatch\TMDB_API> npm start
 ```
 
 ### Current Progress
 
-client>src>component>views>LandingPage>LandingPage.js
+src>components>Movie.js
 
-- Main Image → Get the most popular movie posters
-- Movie Grid Cards → ing..
+- Movie information received through api
+- title, poster_path(poster image), overview, vote_average
+
+scr>App.js
+
+- Main js
+
+src>index.css
+
+- Main css
 
 
-client>src>components>views>LandingPage>Sections>Mainimage.js
 
-- Set MainImage
-
-
-client>src>components>Config.js
-
-- API_URL → TMDB base url
-- API_KEY → TMDB private key
-- IMAGE_BASE_URL → Post image url according to the movie
