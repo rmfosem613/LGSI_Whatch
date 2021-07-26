@@ -1,13 +1,10 @@
 import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
-import Repeater from '@enact/ui/Repeater';
 import Scroller from '@enact/ui/Scroller';
 import Button from '@enact/ui/Button';
-import { Whatch } from './whatch2.png';
+ 
 
 import css from './App.module.less'
-
-const movies = ['1st', '2nd', '3rd', '4th']
 
 
 const AppBase = kind({
@@ -19,6 +16,8 @@ const AppBase = kind({
 
 	render: function(props){
 		return (
+			<Scroller>
+
 			<div className ={css.app} /*{props.className}*/>
 				<div className = {css.color}>
 					<center>
@@ -27,9 +26,6 @@ const AppBase = kind({
 						<input type="text"></input>
 						<Button><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></Button>						
 					</div>
-					{/* <Repeater childComponent = {movie} indexProp='index'>
-						{movies}
-					</Repeater> */}
 					<div className={css.whatch}>
 						<div className={css.postersetting}>
 							<img className={css.poster} src="https://t1.daumcdn.net/movie/9ab1a372dd93ced3c357eabb8e01f3f5d6003267"></img>
@@ -72,9 +68,10 @@ const AppBase = kind({
 					<Button size={css.test2}><img src="https://m.media-amazon.com/images/G/01/IMDb/genres/Superhero._CB1513316168_SX233_CR0,0,233,131_AL_.jpg"></img></Button>
 					</center>
 					<br></br>
-				</div>
-				
+				</div>	
 			</div>
+
+			</Scroller>
 		);
 	}
 });
