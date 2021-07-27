@@ -6,13 +6,13 @@
 
 ### Initial installation
 
-```jsx
-pip install pandas
-```
+- Install data analysis package
 
 ```jsx
-pip install scikit-learn
+pip install pandas scikit-learn
 ```
+
+- Share data visualizations on the web
 
 ```jsx
 pip3 install streamlit
