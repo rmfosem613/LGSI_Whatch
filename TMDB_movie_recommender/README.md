@@ -7,7 +7,11 @@
 ### Initial installation
 
 ```jsx
-pip install pandas scikit-learn
+pip install pandas
+```
+
+```jsx
+pip install scikit-learn
 ```
 
 ```jsx
