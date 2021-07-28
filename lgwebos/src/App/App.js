@@ -3,6 +3,10 @@ import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 import Scroller from '@enact/ui/Scroller';
 import Button from '@enact/ui/Button';
  
+import {HashRouter, Route} from 'react-router-dom';
+import Home from "../routes/Home";
+import Search from "../routes/Search";
+import Navigation from "../components/Navigation";
 
 import css from './App.module.less'
 
@@ -23,7 +27,12 @@ const AppBase = kind({
 					<center>
 						<h2 className={css.whatch}>Whatch</h2>
 					<div className={css.search}>
-						<input type="text"></input>
+						{/* <input type="text"></input> */}
+						<HashRouter>
+							<Navigation />
+							<Route path="/" exact={true} component={Home}></Route>
+							<Route path="/search" exact={true} component={Search}></Route>
+						</HashRouter>
 						<Button><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></Button>						
 					</div>
 					<div className={css.whatch}>
