@@ -16,6 +16,7 @@ pip install pandas scikit-learn
 
 ```jsx
 pip3 install streamlit
+streamlit run app.py
 ```
 
 
