@@ -16,9 +16,10 @@ const AppBase = kind({
 
 	render: function(props){
 		return (
-			<Scroller>
+
 
 			<div className ={css.app} /*{props.className}*/>
+				<Scroller>
 				<div className = {css.color}>
 					<center>
 						<h2 className={css.whatch}>Whatch</h2>
@@ -68,10 +69,11 @@ const AppBase = kind({
 					<Button size={css.test2}><img src="https://m.media-amazon.com/images/G/01/IMDb/genres/Superhero._CB1513316168_SX233_CR0,0,233,131_AL_.jpg"></img></Button>
 					</center>
 					<br></br>
-				</div>	
+				</div>
+				</Scroller>
 			</div>
 
-			</Scroller>
+
 		);
 	}
 });
