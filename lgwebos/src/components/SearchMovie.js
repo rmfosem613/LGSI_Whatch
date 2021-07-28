@@ -13,16 +13,16 @@ function SearchMovie({id, year, title, poster, rating, director, actor}) {
           title.replace(/<b>/gi,"").replace(/<\/b>/gi,"")
         }</h3>
       <p className="movie__rating">
-        <span>평점</span> {rating}/10
+        <span>rating</span> {rating}/10
       </p>
       <p className="movie__year">
-        <span>개봉일</span> {year}
+        <span>year</span> {year}
       </p>
     <p className="movie__director">
-      <span>감독</span> {director}
+      <span>director</span> {director}
     </p>
     <p className="movie__actor">
-      <span>배우</span> {actor}
+      <span>actor</span> {actor}
     </p>
     </div>
   </a>

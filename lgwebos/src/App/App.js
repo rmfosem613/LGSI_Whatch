@@ -20,20 +20,17 @@ const AppBase = kind({
 
 	render: function(props){
 		return (
-			<Scroller>
-
 			<div className ={css.app} /*{props.className}*/>
+				<Scroller>
 				<div className = {css.color}>
 					<center>
 						<h2 className={css.whatch}>Whatch</h2>
 					<div className={css.search}>
-						{/* <input type="text"></input> */}
 						<HashRouter>
 							<Navigation />
 							<Route path="/" exact={true} component={Home}></Route>
 							<Route path="/search" exact={true} component={Search}></Route>
-						</HashRouter>
-						<Button><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></Button>						
+						</HashRouter>						
 					</div>
 					<div className={css.whatch}>
 						<div className={css.postersetting}>
@@ -78,9 +75,8 @@ const AppBase = kind({
 					</center>
 					<br></br>
 				</div>	
+				</Scroller>
 			</div>
-
-			</Scroller>
 		);
 	}
 });

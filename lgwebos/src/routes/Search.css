@@ -10,6 +10,7 @@
     border-right: 1px solid transparent;
     padding: 0 5px;
     position: relative;
+    text-align: center;
 }
 
 .input_div {
