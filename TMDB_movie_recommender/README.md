@@ -1,5 +1,8 @@
 # Using The Kaggle dataset
 
+The movie information of the TMDB dataset was analyzed through text mining. Searching for a movie title suggests similar types of movies.
+
+
 ### 🔗Reference
 
 - [campusx-official](https://github.com/campusx-official/movie-recommender-system-tmdb-dataset)
@@ -12,10 +15,18 @@
 pip install pandas scikit-learn
 ```
 
-- Share data visualizations on the web
+
+### Must necessity
+
+- similarity.pkl
+
+
+### Share data visualizations on the web
 
 ```jsx
 pip3 install streamlit
+streamlit run app.py
 ```
+
 
 

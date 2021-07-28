@@ -1,0 +1,13 @@
+{
+  "id": "com.whatch.app",
+  "version": "2.0.0",
+  "vendor": "My Company",
+  "type": "web",
+  "main": "index.html",
+  "title": "Whatch",
+  "icon": "icon.png",
+  "requiredPermissions": [
+    "time.query",
+    "activity.operation"
+  ]
+}
