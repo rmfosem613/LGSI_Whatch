@@ -1,6 +1,7 @@
 import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
-import Scroller from '@enact/ui/Scroller';
+import Scroller from '@enact/sandstone/Scroller';
+// import Scroller from '@enact/ui/Scroller';
 import Button from '@enact/ui/Button';
  
 import {HashRouter, Route} from 'react-router-dom';
@@ -20,8 +21,9 @@ const AppBase = kind({
 
 	render: function(props){
 		return (
+			<Scroller>
 			<div className ={css.app} /*{props.className}*/>
-				<Scroller>
+				
 				<div className = {css.color}>
 					<center>
 						<h2 className={css.whatch}>Whatch</h2>
@@ -75,8 +77,9 @@ const AppBase = kind({
 					</center>
 					<br></br>
 				</div>	
-				</Scroller>
+				
 			</div>
+			</Scroller>
 		);
 	}
 });
