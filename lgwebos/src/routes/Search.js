@@ -6,7 +6,11 @@ import "./Search.css";
 import {naverMoviesApi} from '../api';
 import Button from '@enact/ui/Button';
 
+
+
 import css from '../App/App.module.less'
+
+
 
 class Search extends React.Component {
   state = {
@@ -61,9 +65,11 @@ class Search extends React.Component {
     //this.getSearchMovie();
     this.getSearchMovie();
   };
+  
 
   render() {
     const {movies, isLoading} = this.state;
+
 
     return (<section className="container">
       {
@@ -75,6 +81,7 @@ class Search extends React.Component {
             <div>
               <div className="input_div">
                 <input className="input_search" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search for a movie."/>
+                
                 <Button><button type="submit"><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></button></Button>
               </div>
               <div className="movies">

@@ -23,7 +23,6 @@ const AppBase = kind({
 		return (
 			<Scroller>
 			<div className ={css.app} /*{props.className}*/>
-				
 				<div className = {css.color}>
 					<center>
 						<h2 className={css.whatch}>Whatch</h2>
@@ -32,7 +31,7 @@ const AppBase = kind({
 							<Navigation />
 							<Route path="/" exact={true} component={Home}></Route>
 							<Route path="/search" exact={true} component={Search}></Route>
-						</HashRouter>						
+						</HashRouter>
 					</div>
 					<div className={css.whatch}>
 						<div className={css.postersetting}>
