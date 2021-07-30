@@ -5,10 +5,11 @@ import "./Home.css";
 import "./Search.css";
 import { naverMoviesApi } from '../api';
 import Button from '@enact/ui/Button';
-
+import {trasnrcript} from './voice'
 
 
 import css from '../App/App.module.less'
+import Voice from './voice';
 
 
 
@@ -34,7 +35,7 @@ class Search extends React.Component {
         } } = await axios.get('/v1/search/movie.json', {
           params: {
             query: search,
-            display: 20
+            ddisplayisplay: 20
           },
           headers: {
             'X-Naver-Client-id': ID_KEY,
@@ -78,11 +79,9 @@ class Search extends React.Component {
             <span className="loader__text">Loading..{this.state.name}</span>
           </div>)
           : (<form onSubmit={this.handleSubmit}>
-
-
             <input className="input_search" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search for a movie." />
             <button type="submit"><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></button>
-
+            <Voice />
             <div className="movies">
               {movies.map(movie => (<SearchMovie key={movie.link} id={movie.link} year={movie.pubDate} title={movie.title} poster={movie.image} rating={movie.userRating} director={movie.director} actor={movie.actor} />))}
             </div>

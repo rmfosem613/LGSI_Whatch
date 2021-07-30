@@ -6,8 +6,8 @@ import React from 'react';
 function Voice() {
 
   const {transcript, resetTranscript} = useSpeechRecognition()
-  //similar to useState, create a transcript and resetTranscript func
-  // from the useSpeechRecognition() function
+//   //similar to useState, create a transcript and resetTranscript func
+//   // from the useSpeechRecognition() function
   
   if(!SpeechRecognition.browserSupportsSpeechRecognition()){
     return null
@@ -16,12 +16,12 @@ function Voice() {
 // otherwise, return the following
   return (
       <div>
-      <Button><button onMouseDown={SpeechRecognition.startListening} onMouseUp={SpeechRecognition.stopListening}>voice🎤</button></Button>
-      <p>hi</p>
+      <button onClick={SpeechRecognition.startListening} style={{"font-size":"20px"}}>🎤</button>
+      <p>{transcript}</p>
       </div>
-      ,
-      transcript
+      
   );
 }
+
 
 export default Voice;
