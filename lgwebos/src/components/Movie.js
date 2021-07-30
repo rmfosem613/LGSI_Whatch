@@ -23,7 +23,9 @@ function Movie({id, year, title, summary, poster, genres, rating}) {
       <h3 className="movie__title">{title}</h3>
     <h4 className="movie__rating">{rating}/10</h4>
       <h5 className="movie__year">{year}</h5>
-      {/*<ul className="movie__genres">
+
+      {/* 장르&줄거리 */}
+      {/* <ul className="movie__genres">
             {genres.map((genre, index) => (
               <li key={index} className="genres__genre">
                 {genre}
