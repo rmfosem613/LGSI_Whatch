@@ -1,48 +1,72 @@
-import React from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+
 import Movie from '../components/Movie';
-import "./Home.css";
+// import Voice from './voice';
 
-class Home extends React.Component {
-  state = {
-    isLoading: true,
-    movies: []
-  };
-  let NewS = [];
 
-  getMovies = async () => {
-    //movies.data.data.movies == {data: {data: { movies } } }
-    const {
-      data: {
-        data: {
-          movies
+export const IMG_API = "https://image.tmdb.org/t/p/w1280";
+
+export const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=e1d5657438192648dca986a759fc9c6a&page=1";
+export const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=e1d5657438192648dca986a759fc9c6a&query=";
+
+const fetch = require("node-fetch");
+
+function LandingPage() {
+    const [movies, setMovies] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
+
+    useEffect(() => {
+        getMovies(FEATURED_API);
+    }, []);
+
+    const getMovies = (API) => {
+        fetch(API)
+            .then((res) => res.json())
+            .then((data) => {
+                setMovies(data.results);
+            });
+    }
+
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+
+        if (searchTerm) {
+            getMovies(SEARCH_API + searchTerm);
+
+            setSearchTerm("");
         }
-      }
-    } = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=like_count');
-    //this.setState({movies:movies, isLoading: false})
-    this.setState({movies, isLoading: false})
-  };
-  componentDidMount() {
-    this.getMovies();
-  }
-  render() {
-    const {isLoading, movies} = this.state;
-    return (<section className="container">
-      {
-        isLoading
-          ? (<div className="loader">
-            <span className="loader__text">Loading..</span>
-          </div>)
-          : (<div>
-            <div className="movies">
-            {movies.map(movie => (
-              <Movie key={movie.id} id={movie.id} year={movie.year}
-                title={movie.title} summary={movie.summary} poster={movie.medium_cover_image} genres={movie.genres}
-                rating={movie.rating}/>))}
-          </div></div>)
-      }
-    </section>);
-  }
+    };
+
+    const handleOnChange = (e) => {
+        setSearchTerm(e.target.value);
+    };
+
+    return (
+        <>
+            <header>
+                <form onSubmit={handleOnSubmit}>
+            <table>
+                 <tr>
+                   <td><input
+                        className="search"
+                        type="search"
+                        placeholder="Search..."
+                        value={searchTerm}
+                        onChange={handleOnChange}
+                    /></td>
+                   <td><button className="voice_btn" style={{"font-size":"35px"}}>🎤</button></td>
+                 </tr>
+             </table>
+             </form>
+            </header>
+
+            <div className="movie-container">
+                {movies.length > 0 && movies.map((movie) => <Movie key=
+                    {movie.id} {...movie} />)}
+            </div>
+        </>
+    );
 }
 
-export default Home;
+
+export default LandingPage

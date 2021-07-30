@@ -1,78 +1,108 @@
-.movies {
-  margin-top: 500px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;60&display=swap");
+
+body {
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
-.movies .movie {
-  width: 45%;
-  background-color: white;
-  margin-bottom: 70px;
-  font-weight: 300;
-  padding: 20px;
-  border-radius: 5px;
-  color: #adaeb9;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-}
-
-.movies .movie a {
+.root {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  text-decoration: none;
-  color: inherit;
+  flex-direction: column;
+}
+
+header {
+  background-color: #373b69;
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: white;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.search:focus {
+  outline: 0;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 1000px;
 }
 
 .movie img {
-  position: relative;
-  top: -50px;
-  max-width: 200px;
+  object-fit: cover;
+  height: 400px;
   width: 100%;
-  margin-right: 30px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
-.movie .movie__title {
-  margin: 0;
-  margin-bottom: 5px;
-  font-size: 24px;
-  color: #2c2c2c;
-}
-
-.movie .movie__genres {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  margin: 5px 0px;
-}
-
-.movie__genres li {
-  margin-right: 10px;
-  font-size: 14px;
-}
-
-.movie__data {
-  display: table;
-  float: left;
-  position: relative;
-  width: 415px;
-}
-
-.movie__director,
-.movie__actor,
-.movie__year,
-.movie__rating {
+.movie-info {
   display: flex;
   align-items: center;
-  color: #2c2c2c;
-  font-size: 13px;
+  justify-content: space-between;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
-.movie__director span,
-.movie__actor span,
-.movie__year span,
-.movie__rating span {
-  flex: 0 0 80px;
-  font-weight: 700;
+.movie-info h3 {
+  margin: 0;
+}
+
+/* 영화 설명글 */
+.movie-over {
+  background-color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+  color:#22254b;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0%);  
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  color: green;
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
 }
