@@ -13,20 +13,29 @@ body {
 }
 
 header {
-  background-color: #373b69;
+  margin-left: 35%;
   display: flex;
-  padding: 1rem;
-  justify-content: flex-end;
+  padding: 0;
+}
+
+.table{
+  border: 2px solid #555;
+}
+
+.voice_btn {
+  padding: 2px;
+  margin-top: 45px;
 }
 
 .search {
   background-color: transparent;
   border: 2px solid #22254b;
   border-radius: 50px;
-  color: white;
+  color: #111;
   font-family: inherit;
   font-size: 1.2rem;
   padding: 0.5rem 1.5rem;
+  float:left
 }
 
 .search:focus {

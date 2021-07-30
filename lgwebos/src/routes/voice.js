@@ -16,7 +16,7 @@ function Voice() {
 // otherwise, return the following
   return (
       <div>
-      <button onClick={SpeechRecognition.startListening} style={{"font-size":"20px"}}>🎤</button>
+      <button className="voice_btn" onClick={SpeechRecognition.startListening} style={{"font-size":"35px"}}>🎤</button>
       <p>{transcript}</p>
       </div>
       
