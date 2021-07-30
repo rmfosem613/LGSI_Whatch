@@ -12,6 +12,7 @@ import Navigation from "../components/Navigation";
 import css from './App.module.less'
 
 import Background from './logo.png';
+import Voice from '../routes/voice';
 
 const AppBase = kind({
 	name: 'App',
@@ -35,6 +36,7 @@ const AppBase = kind({
 							<Navigation />
 							<Route path="/" exact={true} component={Home}></Route>
 							<Route path="/search" exact={true} component={Search}></Route>
+							<Route path="/voice" exact={true} component={Voice}></Route>
 						</HashRouter>
 					</div>
 					<div className={css.whatch}>
