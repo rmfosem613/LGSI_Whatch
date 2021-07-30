@@ -27,21 +27,21 @@ const AppBase = kind({
 				<div className = {css.color}>
 					<center>
 					<div className={css.boxh} style={{ backgroundImage: "url(" + `${ Background }` + ")" }}>
-						
+
     				</div>
 					<div className={css.search}>
 						<HashRouter>
 							<Navigation />
 
-							<Route path="/" component={Home}/>
 							<Route path="/" component={Search}/>
+							<Route path="/" component={Home}/>
 						</HashRouter>
 
 					</div>
-					
+
 					</center>
 				</div>
-				
+
 			</div>
 			</Scroller>
 		);
