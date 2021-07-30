@@ -11,7 +11,7 @@ import Navigation from "../components/Navigation";
 
 import css from './App.module.less'
 import Background from './logo.png';
-import Voice from '../routes/voice';
+// import Voice from '../routes/voice';
 
 const AppBase = kind({
 	name: 'App',
