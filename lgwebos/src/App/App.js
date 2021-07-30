@@ -31,10 +31,11 @@ const AppBase = kind({
     				</div>
 					<div className={css.search}>
 						<HashRouter>
-							<Navigation />
-
-							<Route path="/" component={Search}/>
+							
+{/* 
+							<Route path="/" component={Search}/> */}
 							<Route path="/" component={Home}/>
+							<Navigation />
 						</HashRouter>
 
 					</div>

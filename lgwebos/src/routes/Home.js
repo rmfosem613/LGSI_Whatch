@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import Movie from '../components/Movie';
+import Voice from './voice';
+
 
 export const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
@@ -43,15 +45,21 @@ function LandingPage() {
         <>
             <header>
                 <form onSubmit={handleOnSubmit}>
-                    <input
+            <table>
+                 <tr>
+                   <td><input
                         className="search"
                         type="search"
                         placeholder="Search..."
                         value={searchTerm}
                         onChange={handleOnChange}
-                    />
-                </form>
+                    /></td>
+                   <td><Voice /></td>
+                 </tr>
+             </table>
+             </form>
             </header>
+
             <div className="movie-container">
                 {movies.length > 0 && movies.map((movie) => <Movie key=
                     {movie.id} {...movie} />)}
