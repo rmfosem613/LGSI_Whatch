@@ -1,10 +1,15 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;60&display=swap");
 
 body {
-  background-color: #22254b;
+  background-color: #2b4071;
   color: white;
   font-family: "Poppins", sans-serif;
   margin: 0;
+}
+h5 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .root {
@@ -13,7 +18,7 @@ body {
 }
 
 header {
-  background-color: #373b69;
+  background-color: #fce8ae;
   display: flex;
   padding: 1rem;
   justify-content: flex-end;
@@ -21,7 +26,7 @@ header {
 
 .search {
   background-color: transparent;
-  border: 2px solid #22254b;
+  border: 2px solid #000;
   border-radius: 50px;
   color: white;
   font-family: inherit;
@@ -40,18 +45,19 @@ header {
 }
 
 .movie {
-  background-color: #373b69;
+  background-color: #000;
   border-radius: 3px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   margin: 1rem;
-  width: 300px;
+  width: 600px;
+  height: 1000px;
 }
 
 .movie img {
   object-fit: cover;
-  height: 400px;
+  height: 80%;
   width: 100%;
 }
 
@@ -59,7 +65,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  color: #fce8ae;
 }
 
 .movie-info h3 {
@@ -72,9 +78,10 @@ header {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
-  color:#22254b;
+  color:#000;
   padding: 1rem;
   position: absolute;
+  top: 0;
   bottom: 0;
   position: absolute;
   left: 0;
@@ -88,7 +95,7 @@ header {
 }
 
 .tag {
-  background-color: #22254b;
+  background-color: #000;
   border-radius: 5px;
   font-weight: bold;
   padding: 0.5rem;
