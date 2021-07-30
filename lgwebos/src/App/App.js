@@ -29,12 +29,12 @@ const AppBase = kind({
 						<h2 className={css.whatch}>Whatch</h2>
 					<div className={css.search}>
 						<HashRouter>
-							<Navigation />
-							<Route path="/" exact={true} component={Home}></Route>
+							{/*<Navigation />
+							<Route path="/" exact={true} component={Home}></Route> */}
 							<Route path="/search" exact={true} component={Search}></Route>
 						</HashRouter>						
 					</div>
-					<div className={css.whatch}>
+					{/* <div className={css.whatch}>
 						<div className={css.postersetting}>
 							<img className={css.poster} src="https://t1.daumcdn.net/movie/9ab1a372dd93ced3c357eabb8e01f3f5d6003267"></img>
 							<h6>The Boss Baby2</h6>
@@ -51,7 +51,7 @@ const AppBase = kind({
 							<img className={css.poster} src="https://t1.daumcdn.net/movie/88c733527983cbd6ab27e4f5f0673358ecfdf9eb"></img>
 							<h6>The Medium</h6>
 						</div>
-					</div>
+					</div> */}
 					</center>
 				</div>
 				<div>
