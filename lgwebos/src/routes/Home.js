@@ -45,6 +45,7 @@ function LandingPage() {
         <>
             <header>
                 <form onSubmit={handleOnSubmit}>
+                <center>
             <table>
                  <tr>
                    <td><input
@@ -57,6 +58,7 @@ function LandingPage() {
                    <td><Voice /></td>
                  </tr>
              </table>
+             </center>
              </form>
             </header>
 
