@@ -8,10 +8,11 @@ import {HashRouter, Route} from 'react-router-dom';
 import Home from "../routes/Home";
 import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
+import Detail from "../routes/Detail";
 
 import css from './App.module.less'
 import Background from './logo.png';
-import Voice from '../routes/voice';
+// import Voice from '../routes/voice';
 
 const AppBase = kind({
 	name: 'App',
@@ -34,7 +35,8 @@ const AppBase = kind({
 							
 {/* 
 							<Route path="/" component={Search}/> */}
-							<Route path="/" component={Home}/>
+							<Route path="/" exact={true} component={Home}/>
+							<Route path="/movie-detail"  component={Detail} />
 							<Navigation />
 						</HashRouter>
 
