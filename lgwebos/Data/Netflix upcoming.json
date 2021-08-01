@@ -1,0 +1,333 @@
+[{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b13"
+  },
+  "date": "August 1st",
+  "data": [
+    {
+      "title": "Vivo (2021) N",
+      "description": "Animated musical adventure from Lin-Manuel Miranda.",
+      "poster": "https://images.moviefit.me/t/o/248401-vivo.jpg"
+    },
+    {
+      "title": "44 Cats (Season 3)",
+      "description": "Animated kids series.",
+      "poster": "https://image.tmdb.org/t/p/w500/eklKxKtXtyw4Di8HfYmaoFz7wrY.jpg"
+    },
+    {
+      "title": "Darwin’s Game (Season 1)",
+      "description": "Anime series about a mobile game that turns deadly.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzdhOGUwNjEtNTQyMi00MjkxLThkNDMtYjZiZmVkYWI2NDllXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg"
+    },
+    {
+      "title": "Five Feet Apart (2019)",
+      "description": "Romance starring Cole Sprouse and Haley Lu Richardson about a pair of teenagers with cystic fibrosis falling in love while having to remain a distance apart.",
+      "poster": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534451568/five-feet-apart-9781534451568_xlg.jpg"
+    },
+    {
+      "title": "Hunter X Hunter (Season 6)",
+      "description": "This was originally scheduled for July 1st, 2021 so may eventually slip again.",
+      "poster": "https://cf.shopee.ph/file/b28da7965931698d51a2d954da4d3535"
+    },
+    {
+      "title": "I missed you: Director’s Cut",
+      "description": "Chinese romantic drama.",
+      "poster": "https://i.mydramalist.com/xB0yj_4f.jpg"
+    },
+    {
+      "title": "Poms (2019)",
+      "description": "Zara Hayes writes and directs this comedy about a woman moving into a retirement home and starts up a cheerleading squad.",
+      "poster": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/f00ea406116a1165632f1a9a24b2e309_008057de-d271-4411-9ef3-0da762a50e37.jpg"
+    },
+    {
+      "title": "The Losers (2010)",
+      "description": "Ensemble action movie from over a decade ago about a CIA special forces team betrayed and left for dead. Stars Zoe Saldana, Idris Elba, Jeffrey Dean Morgan and Chris Evans.",
+      "poster": "https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/zz04acd04e.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b14"
+  },
+  "date": "August 3rd",
+  "data": [
+    {
+      "title": "Ijé: The Journey (2010)",
+      "description": "Nigerian crime courtroom drama.",
+      "poster": "https://i0.wp.com/ocdn.eu/images/pulscms/OTI7MDA_/65ece8b87093febdd78121981bd67d59.jpg"
+    },
+    {
+      "title": "Shiny_Flakes: The Teenage Drug Lord (2021) N",
+      "description": "Documentary on the true story that inspired Netflix’s How To Sell Drugs Online (Fast).",
+      "poster": "https://media.gq-magazin.de/photos/60ed53bac8b40a9b20775ff2/16:9/w_1920,c_limit/1_Shiny_Flakes_Plakat.jpg"
+    },
+    {
+      "title": "Top Secrets UFO Projects: Declassified (Season 1) N",
+      "description": "Conspiracy docuseries looking into the existence of UFOs.",
+      "poster": "https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABfmzFzTpdiMnPzuTLjoJ93IwbGXfCHGNuMGuFIIGSqhhOZKhYKdlCTy3SAx2O20WKJuPXvxWhfs-UF5t-2dKgFifxUHd.jpg?r=f3b"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b15"
+  },
+  "date": "August 4th",
+  "data": [
+    {
+      "title": "’76 (2016)",
+      "description": "Inspired by true events, this drama tells the story of a wife having to deal with the after-effects of her husband being accused of a military coup.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BODI0NDI0M2YtOGM4MC00OGE2LWI4MDUtMzA4YTJiNDMwYjZiXkEyXkFqcGdeQXVyNjU2NzU0MzY@._V1_.jpg"
+    },
+    {
+      "title": "Aftermath (2021)",
+      "description": "Horror thriller starring Ashley Greene and Shawn Ashmore.",
+      "poster": "https://mpxfilms.com/wp-content/uploads/Ashley-Greene-Stairs-Aftermath.jpg"
+    },
+    {
+      "title": "American Masters: Inventing David Geffen (Limited Series)",
+      "description": "PBS docuseries looking into the media personality and his rise to fame.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTUzNDAyNzAyMl5BMl5BanBnXkFtZTgwNDA2Nzc5MjE@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "title": "Car Masters: Rust to Riches (Season 3) N",
+      "description": "Motoring show about the crew from Gotham Garage turning hunks of junk to hot rods.",
+      "poster": "https://tremblzer.com/wp-content/uploads/2021/07/1-8827697115.jpg"
+    },
+    {
+      "title": "Chhota Bheem (Season 4)",
+      "description": "Indian-produced animated series.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzAyMDQwMGYtMGNmNS00OWM4LTlmMTAtM2E5YjQ4Yjk1ZmEwXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+    },
+    {
+      "title": "Cocaine Cowboys: The Kings of Miami (Season 1) N",
+      "description": "Billy Corben revisits the top of South Florida traffickers in this new docuseries.",
+      "poster": "https://i1.wp.com/www.iconvsicon.com/wp-content/uploads/2021/07/Cocaine_Cowboys_S1_2021.jpg"
+    },
+    {
+      "title": "Control Z (Season 2) N",
+      "description": "Mexican soap returns for a second season.",
+      "poster": "https://droidjournal.com/wp-content/uploads/2020/05/control-z-poster.jpg"
+    },
+    {
+      "title": "Cooking with Paris (Season 1) N",
+      "description": "Paris Hilton and friends unite in the kitchen.",
+      "poster": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2021%2F07%2F12%2Fparis-hilton-2000.jpg"
+    },
+    {
+      "title": "Pray Away (2021) N",
+      "description": "Documentary produced by Ryan Murphy.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2Q4OTdjYjktMzFiZi00OGYwLWE2NWItOThiOTVhYmIyMGYwXkEyXkFqcGdeQXVyMzAzMjEzNjE@._V1_UY1200_CR90,0,630,1200_AL_.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b16"
+  },
+  "date": "August 5th",
+  "data": [
+    {
+      "title": "The Old Ways (2020)",
+      "description": "Horror movie about a journalist traveling to her home to investigate a story. She then gets kidnapped into a strange cult that believes she’s the devil.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjUwMWFjNDQtNTFmYS00ODMxLWJhMDctNzUyYjI3ZjYyNDNlXkEyXkFqcGdeQXVyNTU3NDIwNDE@._V1_FMjpg_UX1000_.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b17"
+  },
+  "date": "August 6th",
+  "data": [
+    {
+      "title": "Navarasa (Season 1) N",
+      "description": "Tamil anthology series.",
+      "poster": "https://1847884116.rsc.cdn77.org/tamil/home/maniratnam070721_1.jpg"
+    },
+    {
+      "title": "Quam’s Money (2020)",
+      "description": "Nigerian crime comedy about a former security guard turned millionaire.",
+      "poster": "https://www.bellanaija.com/wp-content/uploads/2020/11/Quams-Money.jpg"
+    },
+    {
+      "title": "The Swarm (2020) N",
+      "description": "French indie horror about a single mother breeding locusts who begin getting a taste for blood.",
+      "poster": "https://pics.filmaffinity.com/The_Swarm-494336215-large.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b18"
+  },
+  "date": "August 7th",
+  "data": [
+    {
+      "title": "The Paper Tigers (2020)",
+      "description": "Martial arts comedy featuring Cobra Kai‘s Yuji Okumoto.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDE0NDM0N2EtZDE5MS00Mzk0LWE5MWMtMjliODJkOTI4Y2FkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b19"
+  },
+  "date": "August 9th",
+  "data": [
+    {
+      "title": "Shaman King (Season 1) N",
+      "description": "Anime series based on the manga.",
+      "poster": "https://img.goldposter.com/2020/03/shaman-king_poster_goldposter_com_1.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b1a"
+  },
+  "date": "August 10th",
+  "data": [
+    {
+      "title": "Gabby’s Dollhouse (Season 2) N",
+      "description": "Dreamworks live-action/animated series.",
+      "poster": "https://media1.popsugar-assets.com/files/thumbor/g_recPkIDcJcvi_yQPSxpzpMsoM/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2021/06/08/771/n/24155406/2e21bdc4a8d1c038_Gabby_s_Dollhouse_Season_2_Key_Art/i/Gabby-Dollhouse-Season-2-Hits-Netflix-on-August-10.jpg"
+    },
+    {
+      "title": "I Need Romance (Season 1)",
+      "description": "Romantic comedy series.",
+      "poster": "https://4.bp.blogspot.com/-mniZGOBX95Y/W8pPW-QKrAI/AAAAAAAAIiY/cJDnom4-9ckVBfk21_3oIwmY4aIEcghHACLcBGAs/s1600/box.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b1b"
+  },
+  "date": "August 11th",
+  "data": [
+    {
+      "title": "Misha and the Wolves (2021) N",
+      "description": "Documentary on a woman’s Holocaust memoir which revealed she escaped and lived among wolves.",
+      "poster": "https://newportfilm.com/wp-content/uploads/2021/05/Misha_1Sheet_Final-scaled.jpg"
+    },
+    {
+      "title": "The Kissing Booth 3 (2021) N",
+      "description": "The final entry in the teen rom-com series that was filmed in secret and stars Joey King, Jacob Elordi and Joel Courtney.",
+      "poster": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0hTLqJJK6yf7N9OXSS0bNk5OTlEkpyibpjsCqtUVhcAhOgMZA"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b1c"
+  },
+  "date": "August 12th",
+  "data": [
+    {
+      "title": "Monster Hunter: Legends of the Guild (2021) N",
+      "description": "Fantasy anime based on the Capcom video game.",
+      "poster": "https://www.nintendo-difference.com/wp-content/uploads/2021/07/E6YVI9uXEAEhScJ.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b1d"
+  },
+  "date": "August 13th",
+  "data": [
+    {
+      "title": "Beckett (2021) N",
+      "description": "John David Washington headlines this movie follows an American tourist finding himself knee-deep in a conspiracy while in Greece.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTFlYzU5ZDgtZDYzZi00MTE1LThjNWQtZjdiMTgxZmU1ZDE2XkEyXkFqcGdeQXVyMTAyMjQ3NzQ1._V1_.jpg"
+    },
+    {
+      "title": "Fast & Furious Spy Racers (Season 5) N",
+      "description": "More animated episodes set in the Fast & Furious universe.",
+      "poster": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/07/fast-and-furious-spy-racers-south-pacific-poster.jpg?q=50&fit=crop&w=1200&dpr=1.5"
+    },
+    {
+      "title": "Gone for Good (Season 1) N",
+      "description": "French thriller series based on a Harlan Coben novel.",
+      "poster": "https://images-na.ssl-images-amazon.com/images/I/71RAZEj3GZL.jpg"
+    },
+    {
+      "title": "The Kingdom (Season 1) N",
+      "description": "Spanish drama about a religious leader running for president with an investigation ongoing into the death of his running mate.",
+      "poster": "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABbdJjaxGk5rPPNO5VQ8RqaI_3GKuqBYZ31ZUoOG7Hznb61Rh1xwOv4WdAgX0VEFOZSgkCFrxcA68XlY-z08rFcrT_ae5.jpg?r=87e"
+    },
+    {
+      "title": "Valeria (Season 2) N",
+      "description": "Spanish dramedy series following a writer who is trying to find inspiration after hitting a dead end with her career and relationship.",
+      "poster": "https://loadtv.info/wp-content/uploads/2020/09/valeria_big_70069_700_1000.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b1e"
+  },
+  "date": "August 18th",
+  "data": [
+    {
+      "title": "The Secret Diary of an Exchange Student (2021) N",
+      "description": "Portuguese romantic comedy.",
+      "poster": "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABe8crlNCv6LqYc18JifQFvPu-6TAL02M3qALop1_5E4wWclQzZH91T4snWOL1YpmaRx2e4sgAI1yVI38wZ9RbDoSJWXd.jpg?r=94b"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b1f"
+  },
+  "date": "August 20th",
+  "data": [
+    {
+      "title": "Hit & Run (Season 1) N",
+      "description": "New action thriller series from the creators of Fauda.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNGRlMzMzMWUtNTg0NC00ODdhLTllNzQtYTA4NWIwNjk5Y2JhXkEyXkFqcGdeQXVyNjEwNTM2Mzc@._V1_.jpg"
+    },
+    {
+      "title": "Sweet Girl (2021) N",
+      "description": "Jason Momoa led action thriller directed by Brian Andrew Mendoza. Will see a husband vowing to bring justice to the people that murdered his wife.",
+      "poster": "https://p1-bk.byteimg.com/tos-cn-i-mlhdmxsy5m/f3a17a166eb44bd7961c5db61dac4537~tplv-mlhdmxsy5m-q75:0:0.image"
+    },
+    {
+      "title": "The Chair (Season 1) N",
+      "description": "Dramedy series starring Jay Duplass and Sandra Oh. Comes from Game of Thrones creators David Benioff and D.B. Weiss.",
+      "poster": "https://blog.kakaocdn.net/dn/cQaEQo/btraexhHHli/fLEpkmjIy8FDtkZA5rXPY0/img.jpg"
+    },
+    {
+      "title": "The Loud House Movie (2021) N",
+      "description": "Nickelodeon produced animated movie based on The Loud House series which sees the family go on vacation to Scotland.",
+      "poster": "https://static.wikia.nocookie.net/c102240c-6155-48e6-871b-ea352ab1214f"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b20"
+  },
+  "date": "August 23rd",
+  "data": [
+    {
+      "title": "The Witcher: Nightmare of the Wolf (2021) N",
+      "description": "Anime feature film from Studio Mir based on Netflix’s The Witcher franchise.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2ViMDQ3NDgtNjFkNy00ZTUzLThmMDYtYTMzY2IyZmYwNWJmXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b21"
+  },
+  "date": "August 25th",
+  "data": [
+    {
+      "title": "Post Mortem: No One Dies in Skarnes (Season 1) N",
+      "description": "Norwegian supernatural drama.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjkwYWE5N2QtZDI0My00Y2RmLWI5MmEtZWQwNzMwOWYyOTIyXkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_FMjpg_UX1000_.jpg"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6105447acc120f69f2c62b22"
+  },
+  "date": "August 27th",
+  "data": [
+    {
+      "title": "He’s All That (2021) N",
+      "description": "A modern gender-swapped reboot of the rom-com.",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNmI5YTllMzUtYzk4Zi00NmM5LWFmOTUtZjI2YjM4NWY0ODY0XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg"
+    }
+  ]
+}]

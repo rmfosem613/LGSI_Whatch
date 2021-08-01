@@ -1,6 +1,8 @@
 import React from 'react'; //eslint-disable-line no-unused-vars
 import {Link} from 'react-router-dom';
 import "./Navigation.css";
+import Scroller from "@enact/sandstone/Scroller";
+
 
 function Navigation(){
     return (
@@ -20,8 +22,8 @@ function Navigation(){
       <Link to="/">Crime</Link>
       <Link to="/">Fantasy</Link>
       <Link to="/">Superhero</Link>
-      <Link to="/">Netflix upcoming</Link>
-      <Link to="/">Netflix leaving</Link>
+      <Link to="UpNetflix">Netflix upcoming</Link>
+      <Link to="EndNetflix">Netflix leaving</Link>
     </div>
   )
 }

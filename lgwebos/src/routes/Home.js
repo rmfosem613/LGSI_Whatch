@@ -54,7 +54,6 @@ function LandingPage() {
                         value={searchTerm}
                         onChange={handleOnChange}
                     /></td>
-                   <td><button className="voice_btn" style={{"font-size":"35px"}}>🎤</button></td>
                  </tr>
              </table>
              </form>
