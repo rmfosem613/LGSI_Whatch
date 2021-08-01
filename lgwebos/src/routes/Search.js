@@ -66,7 +66,6 @@ class Search extends React.Component {
     //this.getSearchMovie();
     this.getSearchMovie();
   };
-  
 
   render() {
     const { movies, isLoading } = this.state;
@@ -81,7 +80,6 @@ class Search extends React.Component {
           : (<form onSubmit={this.handleSubmit}>
             <input className="input_search" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search for a movie." />
             <button type="submit"><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></button>
-            
             <div className="movies">
               {movies.map(movie => (<SearchMovie key={movie.link} id={movie.link} year={movie.pubDate} title={movie.title} poster={movie.image} rating={movie.userRating} director={movie.director} actor={movie.actor} />))}
             </div>

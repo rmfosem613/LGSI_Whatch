@@ -4,7 +4,7 @@ import Scroller from '@enact/sandstone/Scroller';
 // import Scroller from '@enact/ui/Scroller';
 import Button from '@enact/ui/Button';
 
-import {HashRouter, Route} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from "../routes/Home";
 import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
@@ -27,22 +27,17 @@ const AppBase = kind({
 				<div className = {css.color}>
 					<center>
 					<div className={css.boxh} style={{ backgroundImage: "url(" + `${ Background }` + ")" }}>
-
     				</div>
 					<div className={css.search}>
 						<HashRouter>
-							
-{/* 
+								{/*
 							<Route path="/" component={Search}/> */}
 							<Route path="/" component={Home}/>
 							<Navigation />
 						</HashRouter>
-
 					</div>
-
 					</center>
 				</div>
-
 			</div>
 			</Scroller>
 		);
