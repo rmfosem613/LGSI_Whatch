@@ -35,7 +35,7 @@ const AppBase = kind({
 							<Route path="/" component={Search}/> */}
 							<Route exact path="/" component={Home}/>
 							<Route exact path="/UpNetflix" component={UpNetflix}/>
-								<Route exact path="/EndNetflix" component={EndNetflix}/>
+							<Route exact path="/EndNetflix" component={EndNetflix}/>
 							</Switch>
 							<Navigation />
 
