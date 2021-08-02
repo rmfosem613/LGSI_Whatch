@@ -27,7 +27,7 @@ function ItemCard({ImageURL, Title, Description, Date, Link}) {
                         (function(){
                             if({Description}.Description == undefined){
                                 return(
-                                    <button onClick={handleclick}><img className="NetflixLogo" src = {Nlogo}/></button>
+                                    <button onClick={handleclick} className="NLogoBtn"><img className="NetflixLogo" src = {Nlogo}/></button>
                                 )
                             }else{
                                 return(
