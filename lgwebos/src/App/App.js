@@ -2,14 +2,14 @@ import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 import Scroller from '@enact/sandstone/Scroller';
 import Button from '@enact/ui/Button';
-import {HashRouter, Route} from 'react-router-dom';
+import UpNetflix from "../routes/UpNetflix";
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from "../routes/Home";
 import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
-import UpNetflix from "../routes/UpNetflix";
+import Detail from "../routes/Detail";
 import css from './App.module.less'
 import Background from './logo.png';
-import {Switch} from 'react-router-dom';
 import EndNetflix from "../routes/EndNetflix";
 
 const AppBase = kind({
@@ -26,27 +26,21 @@ const AppBase = kind({
 				<div className = {css.color}>
 					<center>
 					<div className={css.boxh} style={{ backgroundImage: "url(" + `${ Background }` + ")" }}>
-
     				</div>
-					<div className={css.search}>
+					<div>
 						<HashRouter>
 							<Switch>
-{/* 
-							<Route path="/" component={Search}/> */}
-							<Route exact path="/" component={Home}/>
+
+							<Navigation />
+							<Route path="/" exact={true} component={Home}/>
+							<Route path="/movie-detail"  component={Detail} />
 							<Route exact path="/UpNetflix" component={UpNetflix}/>
 							<Route exact path="/EndNetflix" component={EndNetflix}/>
 							</Switch>
-							<Navigation />
-
 						</HashRouter>
-
-
 					</div>
-
 					</center>
 				</div>
-
 			</div>
 			</Scroller>
 		);
