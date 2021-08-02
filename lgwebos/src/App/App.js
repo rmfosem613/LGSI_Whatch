@@ -29,13 +29,14 @@ const AppBase = kind({
 					<center>
 					<div className={css.boxh} style={{ backgroundImage: "url(" + `${ Background }` + ")" }}>
     				</div>
-					<div className={css.search}>
+					<div>
 						<HashRouter>
 								{/*
 							<Route path="/" component={Search}/> */}
+							<Navigation />
 							<Route path="/" exact={true} component={Home}/>
 							<Route path="/movie-detail"  component={Detail} />
-							<Navigation />
+							
 						</HashRouter>
 					</div>
 					</center>

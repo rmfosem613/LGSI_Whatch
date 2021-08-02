@@ -20,7 +20,6 @@ h5 {
 header {
   background-color: #fce8ae;
   margin-right: 35%;
-  display: flex;
   padding: 0;
 }
 
@@ -30,10 +29,11 @@ header {
 
 .voice_btn {
   padding: 2px;
-  margin-top: 45px;
 }
 
 .search {
+  display: flex;
+  margin-top: 15%;
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 50px;

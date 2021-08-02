@@ -106,3 +106,10 @@ header {
 .tag.red {
   color: red;
 }
+
+.test {
+  position: absolute;
+  display: inline-block;
+  width: 64px;
+  margin-left: 30px;
+}
