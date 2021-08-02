@@ -7,8 +7,6 @@ import registerServiceWorker from './registerServiceWorker';
 
 import Home from './pages/Home';
 import Details from './pages/Details';
-import About from './pages/About';
-import Faq from './pages/Faq';
 import NotFound from './pages/NotFound';
 
 import 'semantic-ui-css/semantic.min.css';
@@ -21,8 +19,6 @@ ReactDOM.render((
       <Route exact path="/" component={Home} />
       <Route exact path="/list" component={Home} />
       <Route exact path="/list/:movieid" component={Details} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/faq" component={Faq} />
       <Route path="*" component={NotFound} status={404} />
     </Switch>
   </Router>
