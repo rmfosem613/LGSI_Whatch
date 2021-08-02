@@ -8,7 +8,7 @@
     float: left;
     width: 500px;
     height: 700px;
-    margin-right: 50px;
+    margin: 50px;
     border-right: 3px solid #ddd;
 }
 .card{
@@ -47,4 +47,13 @@
 
 .Netflix{
     text-align: center;
+}
+
+.NetflixLogo{
+    width: 300px;
+    background-color: black;
+}
+
+.NDetailLink{
+    text-align: right;
 }
