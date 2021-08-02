@@ -56,36 +56,11 @@ export default class Home extends Component {
   render() {
     return (
       <Page>
-
         <SectionNowPlaying 
           title='Currently in Theaters'
           subtitle='Movies currently on show'
           movies={this.state.moviesInTheaters} 
           authentication={authentication} />
-        
-        <Container>
-          <Segment vertical>
-            <Grid columns='equal' stackable>
-              <Grid.Row>
-                <SectionTrending
-                  title='Trending This Week'
-                  subtitle={`Find out what's popular this week on IMDB`}
-                  buttonTitle='View more on IMDB'
-                  buttonIcon='imdb'
-                  buttonLink='https://imdb.com'
-                  movies={this.state.moviesTrending} />
-                <SectionNews 
-                  title='Entertainment News'
-                  subtitle='Get the latest updates as it happens'
-                  buttonTitle='Read more on Google News'
-                  buttonIcon='google'
-                  buttonLink='https://news.google.com'
-                  news={this.state.moviesNews} />
-              </Grid.Row>
-            </Grid>
-          </Segment>
-        </Container>
-
       </Page>
     );
   }

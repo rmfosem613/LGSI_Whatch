@@ -2,7 +2,6 @@ import React from 'react'
 import { Responsive } from 'semantic-ui-react'
 import Helmet from 'react-helmet'
 import Header from '../components/Header/'
-import Footer from '../components/Footer/'
 
 import config from '../utils/config'
 
@@ -19,7 +18,6 @@ export default (props) => {
       <div style={props.topMarginBeforeChildren ? ({ margin: `${props.topMarginBeforeChildren} 0 0 0`}) : ({ margin: '70px 0 0 0' })}>
         {props.children}
       </div>
-      <Footer />
     </Responsive>
   )
 }
