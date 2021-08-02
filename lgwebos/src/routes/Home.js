@@ -44,9 +44,8 @@ function LandingPage() {
 
     return (
         <>
-            {/* <header> */}
                 <form onSubmit={handleOnSubmit}>
-                {/* <center> */}
+                
             <table>
                  <tr>
                    <td><input
@@ -56,14 +55,14 @@ function LandingPage() {
                         value={searchTerm}
                         onChange={handleOnChange}
                     /></td>
-                   <td><button className="voice_btn">
-                       <img className="test" src="https://image.flaticon.com/icons/png/64/483/483356.png"></img>
-                       </button></td>
+                   <td>
+                       <button>
+                       <img className="test" src="https://image.flaticon.com/icons/png/64/483/483356.png"/>
+                       </button>
+                    </td>
                  </tr>
              </table>
-             {/* </center> */}
              </form>
-            {/* </header> */}
 
             <div className="movie-container">
                 {movies.length > 0 && movies.map((movie) => <Movie key=

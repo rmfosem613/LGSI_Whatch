@@ -27,13 +27,9 @@ header {
   border: 2px solid #555;
 }
 
-.voice_btn {
-  padding: 2px;
-}
-
 .search {
   display: flex;
-  margin-top: 15%;
+  margin-top: 7%;
   background-color: transparent;
   border: 2px solid #000;
   border-radius: 50px;
@@ -120,4 +116,11 @@ header {
 
 .tag.red {
   color: red;
+}
+
+.test {
+  display: inline-block;
+  width: 64px;
+  padding-top: 50px;
+  margin-left: 15px;
 }
