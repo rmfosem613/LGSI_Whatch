@@ -1,0 +1,70 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.image--itemcard {
+    float: left;
+    width: 500px;
+    height: 700px;
+    margin: 50px;
+    border-right: 3px solid #ddd;
+}
+.card{
+    align-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.netflix_view{
+    width:100%;
+}
+
+.component--item_card{
+    background-color: #c6bd9b;
+    text-align: left;
+    width: 100%;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+.poster{
+    width:300px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.text--brand{
+    width: 100%;
+    margin-right:50px;
+}
+
+.tr1{
+    margin-right: 20px;
+}
+
+.Netflix{
+    text-align: center;
+}
+
+.NetflixLogo{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    margin:0;
+    padding: 0;
+}
+
+.NDetailLink{
+    text-align: right;
+}
+
+.NLogoBtn{
+    margin:0;
+    padding: 0;
+    border:none;
+    outline: none;
+    height: 100%;
+}
