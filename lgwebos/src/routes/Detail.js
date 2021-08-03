@@ -53,7 +53,6 @@ class Detail extends React.Component {
         </div>
             <Cast id = {location.state.id}/>
             <Recommand id = {location.state.id} />
-
         </div>);
 
 
