@@ -1,9 +1,11 @@
 import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 import Scroller from '@enact/sandstone/Scroller';
+import Button from '@enact/ui/Button';
 import UpNetflix from "../routes/UpNetflix";
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from "../routes/Home";
+import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
 import Detail from "../routes/Detail";
 import Tv_Detail from "../routes/TV_Detail";
