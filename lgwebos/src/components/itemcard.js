@@ -1,20 +1,21 @@
 import './itemcard.css'
+import {Link} from 'react-router-dom';
 import Nlogo from './Netflix_Logo_RGB.png'
-import { Link } from 'react-router-dom';
 
 
 function ItemCard({ImageURL, Title, Description, Date, Link}) {
-
     function handleclick(e){
         window.location.href = {Link}.Link;
     }
-    
+
     return (
+        
         <div className="card">
+            
             <table className="component--item_card" >
                 <tr >
                     <td rowspan="3" className="poster">
-                        <img src={ImageURL} className="image--itemcard"/>
+                    <img src={ImageURL} className="image--itemcard"/>
                     </td>
                     <tr  className="tr1">
                         <br/>
@@ -22,6 +23,7 @@ function ItemCard({ImageURL, Title, Description, Date, Link}) {
                             <span className="text--brand">{Title}</span>
                         </h3>
                     </tr>
+
                     <br/>
                     <tr>{
                         (function(){
@@ -47,11 +49,11 @@ function ItemCard({ImageURL, Title, Description, Date, Link}) {
 
                         </td>
                     </tr>
-
-        
                 </tr>
             </table>
+            
         </div>
+        
     );
 }
 
