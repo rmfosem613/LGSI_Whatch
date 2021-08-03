@@ -44,6 +44,7 @@ function LandingPage() {
 
     return (
         <>
+        <header>
                 <form onSubmit={handleOnSubmit}>
                 
             <table>
@@ -63,6 +64,7 @@ function LandingPage() {
                  </tr>
              </table>
              </form>
+             </header>
 
             <div className="movie-container">
                 {movies.length > 0 && movies.map((movie) => <Movie key=

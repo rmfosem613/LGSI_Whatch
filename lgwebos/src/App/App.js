@@ -2,7 +2,7 @@ import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 import Scroller from '@enact/sandstone/Scroller';
 import Button from '@enact/ui/Button';
-import {HashRouter, Route, Switch} from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from "../routes/Home";
 import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
@@ -16,39 +16,37 @@ const AppBase = kind({
 	name: 'App',
 
 	styles: {
-        css
-    },
+		css
+	},
 
-	render: function(props){ //eslint-disable-line no-unused-vars
+	render: function (props) { //eslint-disable-line no-unused-vars
 		return (
 			<Scroller>
-			<div className ={css.app} /*{props.className}*/>
-				<div className = {css.color}>
-					<center>
-					<div className={css.boxh} style={{ backgroundImage: "url(" + `${ Background }` + ")" }}>
-    				</div>
-					<div>
-						<HashRouter>
+				<div className={css.app} /*{props.className}*/>
+					<div className={css.color}>
+						<center>
+							<div className={css.boxh} style={{ backgroundImage: "url(" + `${Background}` + ")" }}>
+							</div>
+							<div>
+								<HashRouter>
+									<Navigation />
+									<Route exact path="/" component={Home} />
+									<Switch>
+										<Route exact path="/UpNetflix" component={UpNetflix} />
+										<Route exact path="/EndNetflix" component={EndNetflix} />
+										<Route path="/movie-detail" component={Detail} />
+									</Switch>
 
-							<Switch>
-							<Navigation />
 
-							<Route exact path="/" component={Home}/>
-							<Route exact path="/UpNetflix" component={UpNetflix}/>
-								<Route exact path="/EndNetflix" component={EndNetflix}/>
-								<Route path="/movie-detail"  component={Detail} />
-							</Switch>
-							
-
-						</HashRouter>
+								</HashRouter>
 
 
 
 
+							</div>
+						</center>
 					</div>
-					</center>
 				</div>
-			</div>
 			</Scroller>
 		);
 	}
@@ -57,4 +55,4 @@ const AppBase = kind({
 const App = ThemeDecorator(AppBase);
 
 export default App;
-export {App, AppBase};
+export { App, AppBase };
