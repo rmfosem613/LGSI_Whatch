@@ -25,6 +25,7 @@ function LandingPage() {
             .then((res) => res.json())
             .then((data) => {
                 setMovies(data.results);
+                console.log(movies);
             });
     }
 
