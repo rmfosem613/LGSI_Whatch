@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import PropTypes from "prop-types";
 import "./Movie.css";
+import "../routes/Detail.css";
 
 function SearchMovie({id, year, title, poster, rating, director, actor}) {
   return (

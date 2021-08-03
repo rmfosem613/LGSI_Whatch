@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
@@ -12,8 +13,13 @@ const setVoteClass = (vote) => {
     }
 };
 
-const Movie = ({ title, poster_path, overview, vote_average }) =>
+const Movie = ({ title, poster_path, overview, vote_average, release_date, genre_ids }) =>
 <div className="movie">
+    <Link
+             to={{
+                 pathname: '/movie-detail',
+                 state: { title, poster_path, overview, vote_average, release_date, genre_ids },
+             }} style={{ textDecoration: 'none' }}>
     <img src={(poster_path ? (IMG_API + poster_path) :
         'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80')}
         alt={title}/>
@@ -28,7 +34,7 @@ const Movie = ({ title, poster_path, overview, vote_average }) =>
         <h5>Overview:</h5>
         <h6>{overview}</h6>
 
-    </div>
+    </div></Link>
 </div>;
 
 export default Movie;
