@@ -5,7 +5,6 @@ import CastItem from '../Item/'
 
 const CastSection = (props) => (
   <Grid>
-
     {props.slice(0, 8).map((person, index) => <CastItem key={index + "-item"} person={person} /> )}
     <Container textAlign='center'>
     </Container>

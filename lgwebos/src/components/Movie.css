@@ -49,19 +49,24 @@ header {
   width: 1400px;
 }
 
+.actor {
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+}
+
 .movie img {
   object-fit: cover;
   height: 400px;
   width: 100%;
 }
 
-.movie-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 1rem;
-  padding-left: 1rem;
+.actor img {
+  object-fit: cover;
+  height: 60%;
+  width: 30%;
 }
+
 
 .movie-info h3 {
   margin: 0;
