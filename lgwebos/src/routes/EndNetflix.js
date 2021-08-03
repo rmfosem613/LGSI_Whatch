@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import UN from '../../Data/August Leaving.json';
 import ItemCard from "../components/itemcard";
 import '../components/itemcard.css';
+import { Link } from "react-router-dom";
+
 
 const data = [];
 
@@ -27,13 +29,17 @@ class endNetflix extends Component {
                 <br/>
                 <div className="netflix_view">
                     {data.map(netflix => {
-                        return <ItemCard
+                        return (
+                        <ItemCard
                             Date={netflix.date}
                             Link={netflix.data.link}
                             ImageURL={netflix.data.poster}
                             Title={netflix.data.title}
+                            Description={netflix.data.description}
                         />
+                                                )
                     })}
+                    
                 </div>
             </div>
         );

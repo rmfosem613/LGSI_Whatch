@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import UN from '../../Data/August Update.json';
 import ItemCard from "../components/itemcard";
 import '../components/itemcard.css';
+import { Link } from "react-router-dom";
 
 const data = [];
 
@@ -19,22 +20,25 @@ class upNetflix extends Component {
 
 
     render() {
-        console.log(data);
         return (
             <div className="Netflix">
                 <br/>
                 <h1>Netflix Upcoming Contents</h1>
                 <br/>
+                
                 <div className="netflix_view">
                     {data.map(netflix => {
-                        return <ItemCard
+                        return (<Link to="/">
+                            <ItemCard
                             Date={netflix.date}
                             Description={netflix.data.description}
                             ImageURL={netflix.data.poster}
                             Title={netflix.data.title}
                         />
+                        </Link>)
                     })}
                 </div>
+                
             </div>
         );
     }
