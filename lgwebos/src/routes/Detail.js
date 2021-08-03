@@ -1,6 +1,8 @@
 import React from 'react';
 import './Detail.css';
 import Recommand from '../components/Recommand';
+//import Cast from '../components/cast2/Section/';
+import Cast from '../components/Cast';
 
 export const IMG_API = "https://image.tmdb.org/t/p/w1280";
 export const RECOMMEND_API = "https://api.themoviedb.org/3/movie/"
@@ -12,6 +14,9 @@ class Detail extends React.Component {
         if (location.state === undefined) {
             history.push('/');
             
+        }
+        this.state = {
+        cast: []
         }
     }
 
@@ -46,6 +51,7 @@ class Detail extends React.Component {
                 </tr>
             </table>
         </div>
+            <Cast id = {location.state.id}/>
             <Recommand id = {location.state.id} />
 
         </div>);

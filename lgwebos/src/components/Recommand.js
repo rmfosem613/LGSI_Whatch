@@ -4,8 +4,6 @@ import Movie from "./Movie";
 export const RECOMMEND_API = "https://api.themoviedb.org/3/movie/"
 export const RCM_API = "/recommendations?api_key=e1d5657438192648dca986a759fc9c6a&language=en-US&page=1"
 
-export const CAST_API = "https://api.themoviedb.org/3/movie/"
-export const CA_API = "/recommendations?api_key=e1d5657438192648dca986a759fc9c6a&language=en-US&page=1"
 
 const fetch = require("node-fetch");
 
@@ -23,7 +21,8 @@ export function Recommand({id}){
             .then((res) => res.json())
             .then((data) => {
                 setMovies(data.results);
-                console.log(data.results);
+//                console.log(data.results);
+
             });
     }
 
