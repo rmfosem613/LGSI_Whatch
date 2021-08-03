@@ -33,8 +33,10 @@ const AppBase = kind({
 							<Route path="/" exact={true} component={Home}/>
 							<Route path="/movie-detail"  component={Detail} />
 							<Switch>
-							<Route exact path="/UpNetflix" component={UpNetflix}/>
-							<Route exact path="/EndNetflix" component={EndNetflix}/>
+								<div style={{width:'80%'}}> 
+									<Route exact path="/UpNetflix" component={UpNetflix}/>
+									<Route exact path="/EndNetflix" component={EndNetflix}/>
+								</div>
 							</Switch>
 						</HashRouter>
 					</div>
