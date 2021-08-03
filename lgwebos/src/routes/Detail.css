@@ -22,6 +22,16 @@ ul {
     padding-inline-start: 40px;
 }
 
+/* 
+ul{list-style:none;}
+a{text-decoration:none; color:inherit;} */
+
+.box{width:100%; height:600px; border:1px solid #ccc; margin:0; overflow: auto;}
+
+.actor_tab{white-space:nowrap; 
+    overflow-x: auto; text-align:center}
+
+#tab ul li{display:inline-block; padding: 10px 20px; background: #ccc; margin-right:10px;}
 
 .movie__detail {
     box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
