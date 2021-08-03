@@ -3,6 +3,7 @@ import {Link, Route, BrowserRouter as Router} from 'react-router-dom';
 import Button from '@enact/ui/Button';
 import "./Navigation.css";
 
+
 function Navigation(){
     return (
     <div className="nav">
@@ -20,8 +21,8 @@ function Navigation(){
       <Link to="./App/Category.js"><Button>Crime</Button></Link>
       <Link to="./App/Category.js"><Button>Fantasy</Button></Link>
       <Link to="./App/Category.js"><Button>Superhero</Button></Link>
-      <Link to="./App/Category.js"><Button>Netflix upcoming</Button></Link>
-      <Link to="./App/Category.js"><Button>Netflix leaving</Button></Link>
+      <Link to="UpNetflix">Netflix upcoming</Link>
+      <Link to="EndNetflix">Netflix leaving</Link>
     </div>
   )
 }
