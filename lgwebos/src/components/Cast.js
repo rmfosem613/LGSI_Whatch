@@ -11,7 +11,6 @@ const fetch = require("node-fetch");
 
 export function Cast({id}){
     var ca_api = CAST_API + id.toString()+ CA_API;
-    console.log(ca_api);
 
         const [movies, setMovies] = useState([]);
     
@@ -24,8 +23,6 @@ export function Cast({id}){
                 .then((res) => res.json())
                 .then((data) => {
                     setMovies(data.cast);
-                    console.log("cast: ",data.cast);
-                    console.log("profile: ", data.cast[0].profile_path);
                 });
         }
 
