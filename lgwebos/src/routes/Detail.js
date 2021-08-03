@@ -1,13 +1,17 @@
 import React from 'react';
 import './Detail.css';
+import Recommand from '../components/Recommand';
 
 export const IMG_API = "https://image.tmdb.org/t/p/w1280";
+export const RECOMMEND_API = "https://api.themoviedb.org/3/movie/"
+export const RCM_API = "/recommendations?api_key=e1d5657438192648dca986a759fc9c6a&language=en-US&page=1"
 
 class Detail extends React.Component {
     componentDidMount() {
         const { location, history } = this.props;
         if (location.state === undefined) {
             history.push('/');
+            
         }
     }
 
@@ -15,7 +19,11 @@ class Detail extends React.Component {
         const { location } = this.props;
 
         if (location.state) {
+            console.log(location.state.id);
+            console.log(typeof(location.state.id));
+            // var rec_api = RECOMMEND_API + location.state.id + RCM_API;
         return (
+            <div>
         <div className="movie__detail">
             <table>
                 <tr>
@@ -37,6 +45,11 @@ class Detail extends React.Component {
                     </td>
                 </tr>
             </table>
+        </div>
+        {
+            <Recommand id = {location.state.id} />
+            }
+
         </div>);
 
 
