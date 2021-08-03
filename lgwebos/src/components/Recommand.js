@@ -26,8 +26,9 @@ export function Recommand({id}){
 
     return(
         <div className="movie-container">
-        { movies.length>0 && movies.map((movie) => <Movie key=
-            {movie.id} {...movie} />)}
+        { movies.length>0 && movies.map((movie, index) => {
+            return index < 8 ? <Movie key={movie.id} {...movie} /> : null;
+        })}
     </div>
     )
 }
