@@ -23,27 +23,30 @@ function ItemCard({ImageURL, Title, Description, Date, Link}) {
                             <span className="text--brand">{Title}</span>
                         </h3>
                     </tr>
-                    <br/>                    
-                    <tr>
-                    {
+
+                    <br/>
+                    <tr>{
                         (function(){
-                    if({Description}.Description==undefined){
-                        return(
-                            <button onClick={handleclick}><img  className="NetflixBtn" src={Nlogo}/></button>
-                            
-                        )
-                    }else{
-                        console.log("Desc:", {Description})
-                        return(<p><h4>Description :</h4> {Description}</p>)
-                    }
-                        })()}
+                            if({Description}.Description == undefined){
+                                return(
+                                    <button onClick={handleclick} className="NLogoBtn"><img className="NetflixLogo" src = {Nlogo}/></button>
+                                )
+                            }else{
+                                return(
+                                    <p><h4>Description :</h4> {Description}</p>
+                                )
+                            }
+                        })()
+                        }
                     </tr>
                     <br/>
                     <tr>
                         <h5>Date : {Date}</h5>
                     </tr>
-                    <tr><td className="NetflixDetailLink">
-                        <h6><a href = "/">More Information...</a></h6>
+                    <tr >
+                        <td className="NDetailLink">
+                        <a href="/"><h6>More Information...</h6></a>
+
                         </td>
                     </tr>
                 </tr>

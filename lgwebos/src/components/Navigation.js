@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Link, Route, BrowserRouter as Router} from 'react-router-dom';
 import Button from '@enact/ui/Button';
 import "./Navigation.css";
-import Scroller from "@enact/sandstone/Scroller";
 
 
 function Navigation(){

@@ -31,10 +31,9 @@
 .component--item_card{
     background-color: #c6bd9b;
     text-align: left;
-    width: 80%;
+    width: 100%;
     margin-top:30px;
     margin-bottom: 20px;
-    margin-right:0;
 }
 
 .poster{
@@ -45,6 +44,7 @@
 
 .text--brand{
     width: 100%;
+    margin-right:50px;
 }
 
 .tr1{
@@ -64,5 +64,26 @@
 
 .NetflixDetailLink{
     text-align:right;
+}
+
+.NetflixLogo{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    margin:0;
+    padding: 0;
+}
+
+.NDetailLink{
+    text-align: right;
     font-style:italic;
+
+}
+
+.NLogoBtn{
+    margin:0;
+    padding: 0;
+    border:none;
+    outline: none;
+    height: 100%;
 }
