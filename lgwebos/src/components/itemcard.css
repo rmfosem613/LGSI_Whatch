@@ -28,6 +28,10 @@
     color:black;
 }
 
+.netflix_view button {
+    background-color: #000;
+}
+
 .component--item_card{
     background-color: #c6bd9b;
     text-align: left;
