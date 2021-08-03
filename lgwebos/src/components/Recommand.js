@@ -28,10 +28,13 @@ export function Recommand({id}){
     }
 
     return(
+        <div>
+            <h3>Similar Movies</h3>
         <div className="movie-container">
         { movies.length>0 && movies.map((movie, index) => {
             return index < 8 ? <Movie key={movie.id} {...movie} /> : null;
         })}
+    </div>
     </div>
     )
 }

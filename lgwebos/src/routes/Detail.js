@@ -47,7 +47,6 @@ class Detail extends React.Component {
             </table>
         </div>
             <Recommand id = {location.state.id} />
-
         </div>);
 
 

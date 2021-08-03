@@ -78,6 +78,7 @@ class Search extends React.Component {
             <span className="loader__text">Loading..{this.state.name}</span>
           </div>)
           : (<form onSubmit={this.handleSubmit}>
+            <Voice />
             <input className="input_search" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search for a movie." />
             <button type="submit"><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></button>
             <div className="movies">
