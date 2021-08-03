@@ -29,10 +29,10 @@ const AppBase = kind({
     				</div>
 					<div>
 						<HashRouter>
-							<Switch>
-							<Navigation />
+						<Navigation />
 							<Route path="/" exact={true} component={Home}/>
 							<Route path="/movie-detail"  component={Detail} />
+							<Switch>
 							<Route exact path="/UpNetflix" component={UpNetflix}/>
 							<Route exact path="/EndNetflix" component={EndNetflix}/>
 							</Switch>
