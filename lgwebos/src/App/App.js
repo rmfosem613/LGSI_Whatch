@@ -8,6 +8,7 @@ import Home from "../routes/Home";
 import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
 import Detail from "../routes/Detail";
+import Tv from "../routes/Tv";
 import css from './App.module.less'
 import Background from './logo.png';
 import EndNetflix from "../routes/EndNetflix";
@@ -32,6 +33,7 @@ const AppBase = kind({
 						<Navigation />
 							<Route path="/" exact={true} component={Home}/>
 							<Route path="/movie-detail"  component={Detail} />
+							<Route exact path="/Tv" component={Tv}/>
 							<Switch>
 								<div style={{width:'80%'}}> 
 									<Route exact path="/UpNetflix" component={UpNetflix}/>

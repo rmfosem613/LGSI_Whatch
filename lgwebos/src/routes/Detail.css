@@ -6,8 +6,8 @@ h3 {
     display: block;
     font-size: 1.17em;
     margin-block-start: 2%;
-    margin-block-end: 1%;
-    margin-inline-start: 3%;
+    margin-block-end: 2%;
+    margin-inline-start: 6%;
     margin-inline-end: 0%;
     font-weight: bold;
 }
@@ -28,7 +28,7 @@ ul {
                  0 -6px 16px -6px rgba(0, 0, 0, 0.025);
     padding: 5%;
     margin-top: 50px;
-    width: 80%;
+    width: 72%;
     background-color: #fff;
 }
 .movie__detail_img {
@@ -50,7 +50,7 @@ ul {
 
 .movie__detail h5 {
     text-align: justify;
-    margin-left: 3%;
+    margin-left: 6%;
     display: inline-block;
 }
 
