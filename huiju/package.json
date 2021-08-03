@@ -1,5 +1,5 @@
 {
-	"name": "lgwebos",
+	"name": "huiju",
 	"version": "1.0.0",
 	"description": "A general template for an Enact Sandstone application.",
 	"author": "",
@@ -30,25 +30,20 @@
 		"dist/*"
 	],
 	"dependencies": {
-		"@enact/core": "^4.0.5",
+		"@enact/core": "^4.0.0",
 		"@enact/i18n": "^4.0.0",
 		"@enact/sandstone": "^2.0.0-alpha.2",
 		"@enact/spotlight": "^4.0.0",
 		"@enact/ui": "^4.0.0",
-		"@react-navigation/stack": "^5.14.5",
+		"@material-ui/core": "^4.12.3",
+		"@material-ui/icons": "^4.11.2",
+		"@material-ui/lab": "^4.0.0-alpha.60",
 		"axios": "^0.21.1",
 		"ilib": "^14.6.0",
-		"node-fetch": "^2.6.1",
-		"mongodb": "^3.5.7",
-		"dns": "^0.2.2",
 		"prop-types": "^15.6.2",
 		"react": "^17.0.1",
+		"react-alice-carousel": "^2.5.1",
 		"react-dom": "^17.0.1",
-		"react-native-gesture-handler": "^1.10.3",
-		"react-native-reanimated": "^2.2.0",
-		"react-navigation": "^4.4.4",
-		"react-router-dom": "^5.2.0",
-		"react-speech-recognition": "^3.8.2"
-	},
-	"proxy": "https://openapi.naver.com"
+		"react-router-dom": "^5.2.0"
+	}
 }
