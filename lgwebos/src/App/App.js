@@ -1,13 +1,12 @@
 import kind from '@enact/core/kind';
 import ThemeDecorator from '@enact/sandstone/ThemeDecorator';
 import Scroller from '@enact/sandstone/Scroller';
-import Button from '@enact/ui/Button';
 import UpNetflix from "../routes/UpNetflix";
 import {HashRouter, Route, Switch} from 'react-router-dom';
 import Home from "../routes/Home";
-import Search from "../routes/Search";
 import Navigation from "../components/Navigation";
 import Detail from "../routes/Detail";
+import Tv_Detail from "../routes/TV_Detail";
 import Tv from "../routes/Tv";
 import css from './App.module.less'
 import Background from './logo.png';
@@ -33,6 +32,7 @@ const AppBase = kind({
 						<Navigation />
 							<Route path="/" exact={true} component={Home}/>
 							<Route path="/movie-detail"  component={Detail} />
+							<Route path="/tv-detail"  component={Tv_Detail} />
 							<Route exact path="/Tv" component={Tv}/>
 							<Switch>
 								<div style={{width:'80%'}}> 
