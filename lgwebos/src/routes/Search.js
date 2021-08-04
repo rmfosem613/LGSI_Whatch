@@ -3,13 +3,10 @@ import axios from 'axios';
 import SearchMovie from '../components/SearchMovie';
 import "./Home.css";
 import "./Search.css";
-import { naverMoviesApi } from '../api';
 import Button from '@enact/ui/Button';
-// import {trasnrcript} from './voice'
 
 
 import css from '../App/App.module.less'
-// import Voice from './voice';
 
 
 
@@ -78,7 +75,6 @@ class Search extends React.Component {
             <span className="loader__text">Loading..{this.state.name}</span>
           </div>)
           : (<form onSubmit={this.handleSubmit}>
-            <Voice />
             <input className="input_search" type="text" value={this.state.value} onChange={this.handleChange} placeholder="Search for a movie." />
             <button type="submit"><img className={css.test} src="https://image.flaticon.com/icons/png/64/483/483356.png"></img></button>
             <div className="movies">

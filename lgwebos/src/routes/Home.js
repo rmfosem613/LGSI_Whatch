@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 import Movie from '../components/Movie';
-import Voice from './voice';
-
 
 export const IMG_API = "https://image.tmdb.org/t/p/w1280";
 

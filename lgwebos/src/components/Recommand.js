@@ -21,7 +21,7 @@ export function Recommand({id}){
             .then((res) => res.json())
             .then((data) => {
                 setMovies(data.results);
-//                console.log(data.results);
+               console.log(data.results);
 
             });
     }
