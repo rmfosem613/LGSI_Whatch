@@ -28,9 +28,6 @@ export function Cast({id, params}){
 
     return(
         <div>
-            <br></br>
-            <h3>Cast</h3>
-            <br></br>
             <div className="movie-container">
             { movies.length>0 && movies.map((movie, index) => {
                 return index < 8 ? <Actor key={movie.id} {...movie} /> : null;

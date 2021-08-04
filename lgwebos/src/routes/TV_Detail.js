@@ -35,17 +35,18 @@ class Detail extends React.Component {
                             </ul>
                             <h5>{location.state.first_air_date}</h5>
                             <h5>{location.state.overview}</h5>
+                            <h4>Cast</h4>
+                            <div class="box">
+                                <div id="tab">
+                                    <ul className="actor_tab">
+                                        <Cast id={location.state.id} params={"tv"} />
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </td>
                 </tr>
             </table>
-            <div class="box">
-                            <div id="tab">
-                                <ul className="actor_tab">
-                                    <Cast id={location.state.id} params={"tv"} />
-                                </ul>
-                            </div>
-                        </div>
         </div>);
 
 

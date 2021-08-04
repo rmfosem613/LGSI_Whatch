@@ -45,19 +45,20 @@ class Detail extends React.Component {
                                             {location.state.vote_average}
                                         </ul>
                                         <h5>{location.state.release_date}</h5>
-                                        <h5>{location.state.overview}</h5>
+                                        <h5 className="bottom">{location.state.overview}</h5>
 
+                                        <h4>Cast</h4>
+                                        <div class="box">
+                                            <div id="tab">
+                                                <ul className="actor_tab">
+                                                    <Cast id={location.state.id} params = {"movie"} />
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                         </table>
-                        <div class="box">
-                            <div id="tab">
-                                <ul className="actor_tab">
-                                    <Cast id={location.state.id} params = {"movie"} />
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     
                     <Recommand id={location.state.id} />

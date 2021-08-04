@@ -26,10 +26,20 @@ ul {
 ul{list-style:none;}
 a{text-decoration:none; color:inherit;} */
 
-.box{width:100%; height:600px; border:1px solid #ccc; margin:0; overflow: auto;}
+.box{width:100%; height:600px; border:1px solid #ccc; margin-left: 5%; overflow: auto;}
 
 .actor_tab{white-space:nowrap; 
     overflow-x: auto; text-align:center}
+
+.actor_tab ui{
+    display: inline-block;
+        list-style-type: disc;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+}
 
 #tab ul li{display:inline-block; padding: 10px 20px; background: #ccc; margin-right:10px;}
 
@@ -50,7 +60,7 @@ a{text-decoration:none; color:inherit;} */
 .movie__detail .movie__title .movie__vote_average  {
     list-style: none;
     padding: 0;
-    margin: 2% 0% 2% 3%;
+    margin: 2% 0% 2% 5%;
     text-align: start;
 }
 
@@ -72,4 +82,14 @@ a{text-decoration:none; color:inherit;} */
     width: 50px;
     margin-right: 10px;
     box-shadow: 0 0 0 0;
+}
+
+.bottom {
+    margin-bottom: 2%;
+}
+
+h4 {
+    margin-left: 6%;
+    margin-bottom: 1%;
+    margin-top: 2%;
 }
