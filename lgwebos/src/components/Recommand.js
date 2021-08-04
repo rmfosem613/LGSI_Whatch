@@ -28,6 +28,7 @@ export function Recommand({id}){
 
     return(
         <div>
+            <br></br>
             <h3>Similar Movies</h3>
         <div className="movie-container">
         { movies.length>0 && movies.map((movie, index) => {

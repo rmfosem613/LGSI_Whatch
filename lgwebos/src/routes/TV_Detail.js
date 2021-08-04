@@ -1,5 +1,6 @@
 import React from 'react';
 import './Detail.css';
+import Cast from '../components/Cast';
 
 export const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
@@ -13,6 +14,7 @@ class Detail extends React.Component {
 
     render() {
         const { location } = this.props;
+        console.log(location.state);
 
         if (location.state) {
         return (
@@ -26,7 +28,7 @@ class Detail extends React.Component {
                     </td>
                     <td>
                         <div className="movie__title">
-                            <h3>{location.state.name}</h3>
+                            <h2>{location.state.name}</h2>
                             <ul className="movie__vote_average">
                                 <img className="star" src="https://image.flaticon.com/icons/png/512/2107/2107957.png"></img>
                                 {location.state.vote_average}
@@ -37,6 +39,13 @@ class Detail extends React.Component {
                     </td>
                 </tr>
             </table>
+            <div class="box">
+                            <div id="tab">
+                                <ul className="actor_tab">
+                                    <Cast id={location.state.id} params={"tv"} />
+                                </ul>
+                            </div>
+                        </div>
         </div>);
 
 

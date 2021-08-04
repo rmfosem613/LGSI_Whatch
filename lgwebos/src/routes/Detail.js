@@ -13,10 +13,10 @@ class Detail extends React.Component {
         const { location, history } = this.props;
         if (location.state === undefined) {
             history.push('/');
-            
+
         }
         this.state = {
-        cast: []
+            cast: []
         }
     }
 
@@ -25,35 +25,43 @@ class Detail extends React.Component {
 
         if (location.state) {
             console.log(location.state.id);
-            console.log(typeof(location.state.id));
+            console.log(typeof (location.state.id));
             // var rec_api = RECOMMEND_API + location.state.id + RCM_API;
-        return (
-            <div>
-        <div className="movie__detail">
-            <table>
-                <tr>
-                    <td>
-                        <img className="movie__detail_img" src={(location.state.poster_path ? (IMG_API + location.state.poster_path) :
-                                                'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80')}
-                                                alt={location.state.title}/>
-                    </td>
-                    <td>
-                        <div className="movie__title">
-                            <h3>{location.state.title}</h3>
-                            <ul className="movie__vote_average">
-                                <img className="star" src="https://image.flaticon.com/icons/png/512/2107/2107957.png"></img>
-                                {location.state.vote_average}
-                            </ul>
-                            <h5>{location.state.release_date}</h5>
-                            <h5>{location.state.overview}</h5>
+            return (
+                <div>
+                    <div className="movie__detail">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img className="movie__detail_img" src={(location.state.poster_path ? (IMG_API + location.state.poster_path) :
+                                        'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80')}
+                                        alt={location.state.title} />
+                                </td>
+                                <td>
+                                    <div className="movie__title">
+                                        <h2>{location.state.title}</h2>
+                                        <ul className="movie__vote_average">
+                                            <img className="star" src="https://image.flaticon.com/icons/png/512/2107/2107957.png"></img>
+                                            {location.state.vote_average}
+                                        </ul>
+                                        <h5>{location.state.release_date}</h5>
+                                        <h5>{location.state.overview}</h5>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="box">
+                            <div id="tab">
+                                <ul className="actor_tab">
+                                    <Cast id={location.state.id} params = {"movie"} />
+                                </ul>
+                            </div>
                         </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-            <Cast id = {location.state.id}/>
-            <Recommand id = {location.state.id} />
-        </div>);
+                    </div>
+                    
+                    <Recommand id={location.state.id} />
+                </div>);
 
 
         } else {
