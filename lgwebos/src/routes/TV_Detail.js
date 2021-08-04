@@ -28,7 +28,7 @@ class Detail extends React.Component {
                     </td>
                     <td>
                         <div className="movie__title">
-                            <h3>{location.state.name}</h3>
+                            <h2>{location.state.name}</h2>
                             <ul className="movie__vote_average">
                                 <img className="star" src="https://image.flaticon.com/icons/png/512/2107/2107957.png"></img>
                                 {location.state.vote_average}
