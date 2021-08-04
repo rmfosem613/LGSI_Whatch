@@ -54,7 +54,7 @@ class Detail extends React.Component {
                         <div class="box">
                             <div id="tab">
                                 <ul className="actor_tab">
-                                    <Cast id={location.state.id} />
+                                    <Cast id={location.state.id} params = {"movie"} />
                                 </ul>
                             </div>
                         </div>

@@ -9,8 +9,8 @@ const Actor = ({ character, profile_path, name }) =>
         'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1940&q=80')}
         alt={character}/>
     <div>
+        <p>{name}</p>
         <h6>{character}</h6>
-        <h6>{name}</h6>
     </div>
 </div>;
 
