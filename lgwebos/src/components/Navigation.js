@@ -7,7 +7,7 @@ import "./Navigation.css";
 function Navigation(){
     return (
     <div className="nav">
-      <Link to='/'>Home</Link>
+      <Link to='/'>Movie</Link>
       <Link to='/Tv'>Tv</Link>
       <Link to="/UpNetflix">Netflix upcoming</Link>
       <Link to="/EndNetflix">Netflix leaving</Link>

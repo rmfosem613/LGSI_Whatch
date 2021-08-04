@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Actor from "./Actor";
 
-const IMAGE_URL = 'https://image.tmdb.org/t/p/w500'
+const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
-export const CAST_API = "https://api.themoviedb.org/3/"
-export const CA_API = "/credits?api_key=e1d5657438192648dca986a759fc9c6a&language=en-US"
+export const CAST_API = "https://api.themoviedb.org/3/";
+export const CA_API = "/credits?api_key=e1d5657438192648dca986a759fc9c6a&language=en-US";
 
 
 const fetch = require("node-fetch");

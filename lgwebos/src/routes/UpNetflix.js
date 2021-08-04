@@ -28,14 +28,14 @@ class upNetflix extends Component {
                 
                 <div className="netflix_view">
                     {data.map(netflix => {
-                        return (<Link to="/">
+                        return (
                             <ItemCard
                             Date={netflix.date}
                             Description={netflix.data.description}
                             ImageURL={netflix.data.poster}
                             Title={netflix.data.title}
                         />
-                        </Link>)
+                        )
                     })}
                 </div>
                 

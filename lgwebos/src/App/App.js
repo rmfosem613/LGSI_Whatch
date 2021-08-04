@@ -38,8 +38,8 @@ const AppBase = kind({
 							<Route path="/tv-detail"  component={Tv_Detail} />
 							<Switch>
 								<div style={{width:'80%'}}> 
-									<Route exact path="/UpNetflix" component={UpNetflix}/>
-									<Route exact path="/EndNetflix" component={EndNetflix}/>
+							<Route exact path="/UpNetflix" component={UpNetflix}/>
+							<Route exact path="/EndNetflix" component={EndNetflix}/>
 								</div>
 							</Switch>
 						</HashRouter>
