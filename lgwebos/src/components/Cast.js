@@ -28,7 +28,7 @@ export function Cast({id}){
 
     return(
         <div>
-            <h3>Similar Movies</h3>
+            <h3>Cast</h3>
         <div className="movie-container">
         { movies.length>0 && movies.map((movie, index) => {
             return index < 8 ? <Actor key={movie.id} {...movie} /> : null;
